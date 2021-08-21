@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_single_player_view.xml",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_single_player_view.xml"
+    }
+]

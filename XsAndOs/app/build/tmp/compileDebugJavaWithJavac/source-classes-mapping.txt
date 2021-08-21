@@ -1,0 +1,27 @@
+com/example/xsandos/data/LoginDataSource.java
+ com.example.xsandos.data.LoginDataSource
+com/example/xsandos/data/model/LoggedInUser.java
+ com.example.xsandos.data.model.LoggedInUser
+com/example/xsandos/data/Result.java
+ com.example.xsandos.data.Result
+ com.example.xsandos.data.Result$1
+ com.example.xsandos.data.Result$Error
+ com.example.xsandos.data.Result$Success
+com/example/xsandos/databinding/ActivityMainBinding.java
+ com.example.xsandos.databinding.ActivityMainBinding
+com/example/xsandos/BuildConfig.java
+ com.example.xsandos.BuildConfig
+com/example/xsandos/databinding/ActivitySinglePlayerViewBinding.java
+ com.example.xsandos.databinding.ActivitySinglePlayerViewBinding
+com/example/xsandos/databinding/ActivityLoginBinding.java
+ com.example.xsandos.databinding.ActivityLoginBinding
+com/example/xsandos/data/LoginRepository.java
+ com.example.xsandos.data.LoginRepository
+com/example/xsandos/SinglePlayerView.java
+ com.example.xsandos.SinglePlayerView
+ com.example.xsandos.SinglePlayerView$1
+ com.example.xsandos.SinglePlayerView$2
+ com.example.xsandos.SinglePlayerView$3
+com/example/xsandos/MainActivity.java
+ com.example.xsandos.MainActivity
+ com.example.xsandos.MainActivity$1
