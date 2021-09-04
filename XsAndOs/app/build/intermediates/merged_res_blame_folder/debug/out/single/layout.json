@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_multiplayer_view.xml",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_multiplayer_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_firebase_uiactivity.xml",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_firebase_uiactivity.xml"
+    },
+    {
         "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
         "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_login.xml"
     },

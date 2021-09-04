@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/paulc/AndroidStudioProjects/XsAndOs/app/src/main/res/layout/activity_firebase_uiactivity.xml" value="0.11354166666666667" />
         <entry key="..\:/Users/paulc/AndroidStudioProjects/XsAndOs/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/paulc/AndroidStudioProjects/XsAndOs/app/src/main/res/layout/activity_multiplayer_view.xml" value="0.12760416666666666" />
         <entry key="..\:/Users/paulc/AndroidStudioProjects/XsAndOs/app/src/main/res/layout/activity_single_player_view.xml" value="0.11927083333333334" />
       </map>
     </option>

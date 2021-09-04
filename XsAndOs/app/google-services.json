@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "216864415612",
+    "project_id": "xsandosandroid",
+    "storage_bucket": "xsandosandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216864415612:android:892561e96fe93cb7e74ef9",
+        "android_client_info": {
+          "package_name": "com.example.xsandos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216864415612-k4147f6tqd2rbsnfsnlv3679crrfrh4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGKMr6vBwf2qhq3OMrtprGem-m5VRKR0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216864415612-k4147f6tqd2rbsnfsnlv3679crrfrh4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

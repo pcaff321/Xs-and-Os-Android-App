@@ -14,6 +14,7 @@ import android.content.Intent;
 
 
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView playerOneTitle, playerTwoTitle;
@@ -38,6 +39,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SinglePlayerView.class);
+                startActivity(intent);
+            }
+        });
+
+        multi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MultiplayerView.class);
                 startActivity(intent);
             }
         });

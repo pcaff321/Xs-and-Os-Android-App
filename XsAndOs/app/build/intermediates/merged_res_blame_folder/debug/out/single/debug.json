@@ -1,15 +1,23 @@
 [
     {
-        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_firebase_uiactivity.xml.flat",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_firebase_uiactivity.xml"
+    },
+    {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
         "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_multiplayer_view.xml.flat",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_multiplayer_view.xml"
     },
     {
         "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -32,12 +40,12 @@
         "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\layout-w1240dp_activity_login.xml.flat",
