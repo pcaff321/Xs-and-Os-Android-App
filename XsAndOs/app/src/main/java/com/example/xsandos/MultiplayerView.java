@@ -9,16 +9,23 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
 import android.util.Log;
-import java.util.Arrays;
 
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class MultiplayerView extends AppCompatActivity implements View.OnClickListener {
 
     private TextView playerOneTitle, playerTwoTitle;
     private Button [][] buttons = new Button[3][3];
-    private Button newGame;
-    private Button modeBtn;
+    private TextView newGame;
 
     int [][] gameState = new int [3][3];
 
@@ -29,6 +36,8 @@ public class MultiplayerView extends AppCompatActivity implements View.OnClickLi
 
     private int move = 9;
 
+    String gameID;
+
     boolean activePlayer = true;
     boolean playerIsO = true;
     boolean computer = true;
@@ -36,7 +45,13 @@ public class MultiplayerView extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_single_player_view);
+        setContentView(R.layout.activity_multiplayer_view);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            gameID = extras.getString("gameID");
+            //The key argument here must match that used in the other activity
+        }
 
         //player V player
         modeStrings[0] = "> PLAYER VS PLAYER <";
@@ -57,10 +72,9 @@ public class MultiplayerView extends AppCompatActivity implements View.OnClickLi
         playerOneTitle = (TextView) findViewById(R.id.playerOneTitle);
         playerTwoTitle = (TextView) findViewById(R.id.playerTwoTitle);
 
-        newGame = (Button) findViewById(R.id.newGame);
-        modeBtn = (Button) findViewById(R.id.modeButton);
+        newGame = (TextView) findViewById(R.id.gameID);
 
-        newGame.setText("START GAME");
+        newGame.setText("GAME ID: " + gameID);
 
         newGame.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,16 +83,38 @@ public class MultiplayerView extends AppCompatActivity implements View.OnClickLi
             }
         });
 
-        modeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mode = (mode + 1) % (modes.length);
-                modeBtn.setText(modeStrings[mode]);
-            }
-        });
+        resetGame();
+
 
         playerOneTitle.setText("PLAYER ONE");
         playerTwoTitle.setText("PLAYER TWO");
+
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference().child("games");
+
+        DatabaseReference gameRef = ref.child(gameID);
+        gameRef.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
+                String newMove = dataSnapshot.getValue(String.class);
+                int posI = Character.getNumericValue(newMove.charAt(0));
+                int posJ = Character.getNumericValue(newMove.charAt(1));
+                playMove(buttons[posI][posJ], posI, posJ);
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {}
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {}
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String prevChildKey) {}
+
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {}
+        });
 
     }
 
@@ -88,7 +124,6 @@ public class MultiplayerView extends AppCompatActivity implements View.OnClickLi
         activePlayer = true;
         playerIsO = modes[mode][0];
         computer = modes[mode][1];
-        newGame.setText("NEW GAME");
         move = 0;
         for (int i = 0; i < buttons.length; i++){
             for (int j = 0; j < buttons[0].length; j++){
@@ -105,11 +140,13 @@ public class MultiplayerView extends AppCompatActivity implements View.OnClickLi
                         if ((move == 9) || (gameState[posI][posJ] != 2)){
                             return;
                         }
-                        playMove(view, posI, posJ);
-                        onlineMove();
-                        if (computer) {
-                            computerMove(9);
-                        }
+                        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+                        DatabaseReference gameRef = database.getReference().child("games").child(gameID);
+                        Map<String, String> move = new HashMap<>();
+                        String pos = Integer.toString(posI) + Integer.toString(posJ);
+                        move.put(pos, pos);
+
+                        gameRef.setValue(move);
                     }
                 });
             }

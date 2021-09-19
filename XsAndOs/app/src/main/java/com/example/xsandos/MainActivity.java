@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         multi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MultiplayerView.class);
+                Intent intent = new Intent(MainActivity.this, FirebaseUIActivity.class);
                 startActivity(intent);
             }
         });

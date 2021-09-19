@@ -29,6 +29,7 @@ public class SinglePlayerView extends AppCompatActivity implements View.OnClickL
 
     private int move = 9;
 
+    //X is true, O is false
     boolean activePlayer = true;
     boolean playerIsO = true;
     boolean computer = true;
@@ -224,6 +225,9 @@ public class SinglePlayerView extends AppCompatActivity implements View.OnClickL
     }
 
     public void computerMove(int depth){
+        if (activePlayer == (!playerIsO)){
+            return;
+        }
         int [][] state = gameState;
         int [] bestMove = {0, 0};
         int bestScore = -1000;

@@ -24,6 +24,10 @@
         "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_list_players.xml.flat",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_list_players.xml"
+    },
+    {
         "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_single_player_view.xml.flat",
         "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_single_player_view.xml"
     },
@@ -50,6 +54,10 @@
     {
         "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\layout-w1240dp_activity_login.xml.flat",
         "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout-w1240dp\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_join_or_create.xml.flat",
+        "source": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\src\\main\\res\\layout\\activity_join_or_create.xml"
     },
     {
         "merged": "C:\\Users\\paulc\\AndroidStudioProjects\\XsAndOs\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",

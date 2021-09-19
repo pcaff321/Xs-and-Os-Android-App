@@ -71,6 +71,8 @@ public class FirebaseUIActivity extends AppCompatActivity {
         if (result.getResultCode() == RESULT_OK) {
             // Successfully signed in
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            Intent intent = new Intent(FirebaseUIActivity.this, JoinOrCreate.class);
+            startActivity(intent);
             // ...
         } else {
             // Sign in failed. If response is null the user canceled the

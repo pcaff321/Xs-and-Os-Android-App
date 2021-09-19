@@ -2086,6 +2086,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id codeBox
 id collapseActionView
 id confirm_button
 id confirmation_code
@@ -2100,6 +2101,7 @@ id coordinator
 id cos
 id counterclockwise
 id country_list
+id createBtn
 id cross_device_linking_body
 id currentState
 id custom
@@ -2171,6 +2173,7 @@ id fragment_container_view_tag
 id fragment_phone
 id fragment_register_email
 id frost
+id gameID
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2205,6 +2208,7 @@ id invisible_frame
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id joinBtn
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -2563,6 +2567,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_firebase_uiactivity
+layout activity_join_or_create
+layout activity_list_players
 layout activity_login
 layout activity_main
 layout activity_multiplayer_view

@@ -3,6 +3,10 @@ plugins {
     id 'com.google.gms.google-services'
 }
 
+task wrapper(type: Wrapper){
+    gradleVersion = '8.0'
+}
+
 android {
     compileSdk 31
 
@@ -57,4 +61,8 @@ dependencies {
     // For example, declare the dependencies for Firebase Authentication and Cloud Firestore
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore'
+
+    implementation 'com.google.firebase:firebase-analytics:17.2.1'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+
 }

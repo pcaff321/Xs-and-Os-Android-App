@@ -48,10 +48,7 @@ public final class ActivityMultiplayerViewBinding implements ViewBinding {
   public final Button button22;
 
   @NonNull
-  public final Button modeButton;
-
-  @NonNull
-  public final Button newGame;
+  public final TextView gameID;
 
   @NonNull
   public final TextView playerOneTitle;
@@ -63,7 +60,7 @@ public final class ActivityMultiplayerViewBinding implements ViewBinding {
       @NonNull Button button00, @NonNull Button button01, @NonNull Button button02,
       @NonNull Button button10, @NonNull Button button11, @NonNull Button button12,
       @NonNull Button button20, @NonNull Button button21, @NonNull Button button22,
-      @NonNull Button modeButton, @NonNull Button newGame, @NonNull TextView playerOneTitle,
+      @NonNull TextView gameID, @NonNull TextView playerOneTitle,
       @NonNull TextView playerTwoTitle) {
     this.rootView = rootView;
     this.button00 = button00;
@@ -75,8 +72,7 @@ public final class ActivityMultiplayerViewBinding implements ViewBinding {
     this.button20 = button20;
     this.button21 = button21;
     this.button22 = button22;
-    this.modeButton = modeButton;
-    this.newGame = newGame;
+    this.gameID = gameID;
     this.playerOneTitle = playerOneTitle;
     this.playerTwoTitle = playerTwoTitle;
   }
@@ -162,15 +158,9 @@ public final class ActivityMultiplayerViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.modeButton;
-      Button modeButton = ViewBindings.findChildViewById(rootView, id);
-      if (modeButton == null) {
-        break missingId;
-      }
-
-      id = R.id.newGame;
-      Button newGame = ViewBindings.findChildViewById(rootView, id);
-      if (newGame == null) {
+      id = R.id.gameID;
+      TextView gameID = ViewBindings.findChildViewById(rootView, id);
+      if (gameID == null) {
         break missingId;
       }
 
@@ -187,7 +177,7 @@ public final class ActivityMultiplayerViewBinding implements ViewBinding {
       }
 
       return new ActivityMultiplayerViewBinding((ConstraintLayout) rootView, button00, button01,
-          button02, button10, button11, button12, button20, button21, button22, modeButton, newGame,
+          button02, button10, button11, button12, button20, button21, button22, gameID,
           playerOneTitle, playerTwoTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
